@@ -74,7 +74,7 @@ df_category.shape
 
 df_category.nunique()
 df_category.head(5)
-Univariate Analysis
+#Univariate Analysis
 ## category count plot
 
 plt.figure(figsize = (15, 8))
@@ -119,7 +119,7 @@ plt.xticks(rotation=45)
 
 plt.tight_layout()
 plt.show()
-Bivariate Analysis
+#Bivariate Analysis
 ## category count plot
 
 plt.figure(figsize = (15, 8))
@@ -132,7 +132,7 @@ plt.xticks(rotation=45)
 
 plt.tight_layout()
 plt.show(); plt.close()
-Feature Engineering
+#Feature Engineering
 ## Label Encoding
 
 from sklearn.preprocessing import LabelEncoder
@@ -172,7 +172,7 @@ df1 = df_category[["Category", "Brand_ID", "Target_Gender", "Main_Color", "Main_
 label = df_category[["Price_USD"]]
 df1.head(5)
 label.head(5)
-Machine Learning
+#Machine Learning
 ## import 
 from sklearn.preprocessing import OrdinalEncoder, LabelEncoder, OneHotEncoder
 from sklearn.compose import TransformedTargetRegressor, ColumnTransformer
